@@ -22,5 +22,14 @@
 	--color-purple-light: #A29BFE;
 
 	--color-pink-dark: #E84393;
-	--color-pink-light: #FD79A8; 
+	--color-pink-light: #FD79A8;
+    
+    --font-family-b: InterB, sans-serif;
+    --font-family-m: InterM, sans-serif;
+    --font-family-r: InterR, sans-serif;
+    --font-family-t: InterT, sans-serif;
+    
+    --animation-speed: .3s;
+    --animation-func: ease;
+    --animation: var(--animation-speed) var(--animation-func);
 }
