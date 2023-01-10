@@ -1,4 +1,5 @@
 .main{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,6 +59,13 @@
     border-radius: 20px;
 }
 
+.main-grid p{
+    font-family: var(--font-family-r);
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0;
+}
+
 .main-grid-text-first{
     grid-column: 1/2;
     grid-row: 1/2;
@@ -66,6 +74,7 @@
 .main-grid-text-second{
     grid-column: 4/6;
     grid-row: 1/2;
+    align-self: end;
 }
 
 .main-grid-img-circle{
@@ -107,4 +116,15 @@
     width: 240px;
     height: 62px;
     margin-top: 50px;
+}
+
+.main-background-rectangle, 
+.main-background-dots{
+    position: absolute;
+    right: 0;
+    z-index: -2;
+}
+
+.main-background-dots{
+    top: 18px;
 }
