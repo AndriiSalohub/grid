@@ -64,11 +64,13 @@
     background: url("../images/background/wiggle.svg") no-repeat center;
     z-index: -4;
     opacity: 0;
-    transition: opacity var(--animation);
+    transform: translate(15px, -15px);
+    transition: opacity var(--animation), transform var(--animation);
 }
 
 .price-card:hover::after{
     opacity: 1;
+    transform: translate(0px, 0px);
 }
 
 .price-card:nth-child(2) .price-card-button{
