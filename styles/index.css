@@ -33,3 +33,11 @@
     --animation-func: ease;
     --animation: var(--animation-speed) var(--animation-func);
 }
+
+body{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
