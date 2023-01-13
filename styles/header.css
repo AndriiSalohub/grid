@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.header-burger-menu{
+    display: none;
+}
+
 .header-logo-title{
     font-size: 48px;
     font-family: var(--font-family-b);
@@ -52,4 +56,37 @@
 .header-button{
     width: 150px;
     height: 50px;
+}
+
+@media (max-width: 1200px) {
+    .header{
+        padding: 16px 5px 15px 5px;
+    }
+}
+
+@media (max-width: 950px) {
+    .header-nav{
+        display: none;
+    }
+
+    .header-logo-title{
+        color: var(--color-gray-dark);
+        font-size: 24px;
+    }
+
+    .header-logo .header-logo-image{
+        display: none;
+    }
+
+    .header-burger-menu{
+        display: block;
+    }
+
+    .header-button{
+        width: 128px;
+        height: 40px;
+        border-radius: 8px !important;
+        font-size: 18px;
+        font-family: var(--font-family-r) !important;
+    }
 }
