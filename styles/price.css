@@ -152,6 +152,7 @@
 .price-card-service li::before{
     content: "";
     display: block;
+    flex-shrink: 0;
     width: 32px;
     height: 32px;
     border-radius: 999px;
@@ -165,4 +166,57 @@
 
 .price-card:nth-child(3) li::before{
     background-color: var(--color-green-light);
+}
+
+@media(max-width:950px){
+    .price{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .price-card{
+        padding: 14px;
+        margin-right: 14px;
+    }
+    .price-title{
+        font-size: 8vw;
+    }
+    .price-subtitle{
+        font-size: 5vw;
+    }
+}
+
+@media(max-width:700px){
+    .price-cards{
+        flex-direction: column;
+    }
+    .price-card{
+        margin-bottom: 15px;
+    }
+    .price-card::after{
+        content: none;
+    }
+    .price-card-amount{
+        font-size: 16px;
+    }
+    .price-card-amount span{
+        font-size: 24px;
+    }
+}
+
+@media(max-width:500px){
+    .price-title{
+        font-size: 15vw;
+    }
+    .price-subtitle{
+        font-size: 7vw;
+    }
+    .price-card-service li{
+        font-size: 14px;
+    }
+    .price-button{
+        height: 48px;
+    }
+    .price-card:nth-child(2) .price-card-button{
+        font-size: 18px;
+    }
 }
